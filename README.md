@@ -9,3 +9,6 @@ paru -S hyprland-git waybar hyprpaper rofi fish kitty neovim tmux
 ```
 
 A lot of this comes from [1AmSimp1e](https://github.com/1amsimp1e) and their [incredible dotfiles](https://github.com/1amSimp1e/dots) major shoutout and all credit to them!
+
+## Installation
+To install copy any configs to their appropriate folder.
