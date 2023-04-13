@@ -49,6 +49,7 @@ alias yay="paru"
 
 starship init fish | source
 
+# remove this to get rid of neofetch on startup
 function fish_greeting
   neofetch
 end
