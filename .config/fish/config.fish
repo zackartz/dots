@@ -43,6 +43,10 @@ bind \ca 'nvims\n'
 eval "$(tmuxifier init -)"
 export EDITOR=nvim
 
+# i am bad and this is to fix muscle memory
+alias ls="exa"
+alias yay="paru"
+
 starship init fish | source
 
 set fish_greeting "⣇⣿⠘⣿⣿⣿⡿⡿⣟⣟⢟⢟⢝⠵⡝⣿⡿⢂⣼⣿⣷⣌⠩⡫⡻⣝⠹⢿⣿⣷ 
