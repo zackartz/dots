@@ -12,3 +12,6 @@ A lot of this comes from [1AmSimp1e](https://github.com/1amsimp1e) and their [in
 
 ## Installation
 To install copy any configs to their appropriate folder.
+
+## NEOVIM
+For my custom neovim config, based on NvChad, please check out [this repo](https://github.com/zackartz/nvim-cfg).
