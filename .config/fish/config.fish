@@ -54,6 +54,10 @@ function fish_greeting
   neofetch
 end
 
+function tm --wraps tmuxifier --description 'alias tm=tmuxifier load-session'
+  tmuxifier load-session $argv
+end
+
 # Optionally toggle via keybind
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
