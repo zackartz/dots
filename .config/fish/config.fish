@@ -44,7 +44,7 @@ eval "$(tmuxifier init -)"
 export EDITOR=nvim
 
 # i am bad and this is to fix muscle memory
-alias ls="exa"
+alias ls="exa --icons --group-directories-first"
 alias yay="paru"
 
 starship init fish | source
