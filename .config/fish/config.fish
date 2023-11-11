@@ -4,11 +4,11 @@ end
 
 
 function toggle-theme
-	if [ "$THEME" = "Rosé Pine" ]
-		set -U THEME "Rosé Pine Dawn"
-	else
-		set -U THEME "Rosé Pine"
-	end
+    if [ "$THEME" = "Rosé Pine" ]
+        set -U THEME "Rosé Pine Dawn"
+    else
+        set -U THEME "Rosé Pine"
+    end
 
     kitty +kitten themes --reload-in=all $THEME
 
@@ -28,11 +28,11 @@ end
 
 function nvims
     set items nvim-nyoom nvim-lazy nvim-custom
-    set config (printf "%s\n" $items | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+    set config (printf "%s\n" $items | fzf --prompt=" Neovim Config = " --height=~50% --layout=reverse --border --exit-0)
     if [ -z $config ]
         echo "Nothing selected"
         return 0
-    else if [ $config = "default" ]
+    else if [ $config = default ]
         set config ""
     end
     env NVIM_APPNAME=$config nvim $argv
@@ -51,11 +51,11 @@ starship init fish | source
 
 # remove this to get rid of neofetch on startup
 function fish_greeting
-  neofetch
+    neofetch
 end
 
 function tm --wraps tmuxifier --description 'alias tm=tmuxifier load-session'
-  tmuxifier load-session $argv
+    tmuxifier load-session $argv
 end
 
 # Optionally toggle via keybind
